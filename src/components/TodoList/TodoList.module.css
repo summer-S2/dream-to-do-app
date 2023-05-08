@@ -1,0 +1,24 @@
+.container {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.list {
+  flex: 1 1 auto;
+  /* 
+    flex: 
+    grow: container 내부에서 할당 가능한 공간의 정도 (flex-item들이 동일한 grow값을 갖는다면 형제들과 동일한 공간을 나누어 할당받음)
+
+    shrink: flex-item이 flex-container보다 클때 사용되는 속성 (0이면 flex-item이 안줄음, 1이상이면 설정된 숫자값에따라 축소(클수록 많이 줄음))
+
+    basis: flex-item의 초기 크기를 지정. auto로 설정하면 flex-item 크기가 각각의 속성에 따라 정해지고 container크기를 넘지 않기 위해 최소 크기로 줄어들 수 있으며 남은 공간을 채우기 위해 늘어날 수도 있음 (auto는 자동으로 공간이 배분되고 0이면 컨텐츠만큼만 차지함)
+  */
+  overflow-y: auto;
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  margin: 0;
+  padding: 1rem 0;
+}
